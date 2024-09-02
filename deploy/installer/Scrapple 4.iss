@@ -6,7 +6,7 @@
 #define AppURL "http://www.landis-ii.org/"
 
 ; Build directory
-#define BuildDir "..\..\src\bin\Debug\netstandard2.0"
+#define BuildDir "..\..\src\bin\Release\netstandard2.0"
 
 ; LANDIS-II installation directories
 #define ExtDir "C:\Program Files\LANDIS-II-v8\extensions"
@@ -46,7 +46,6 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 ; NB: Do not put an additional version number in the file name of this .dll
 ; (The name of this .dll is defined in the extension's \src\*.csproj file)
 Source: {#BuildDir}\Landis.Extension.SocialClimateFire-v4.dll; DestDir: {#ExtDir}; Flags: ignoreversion
-Source: {#BuildDir}\Landis.Extension.SocialClimateFire-v4.pdb; DestDir: {#ExtDir}; Flags: ignoreversion
 
 ; Requisite auxiliary libraries.  These libraries may be used by other extensions and thus are never uninstalled.
 Source: {#BuildDir}\Landis.Library.Metadata-v2.dll; DestDir: {#ExtDir}; Flags: uninsneveruninstall 
